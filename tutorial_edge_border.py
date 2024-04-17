@@ -17,14 +17,14 @@ dir = "/data_delivery/lniedern/umgc/2023-q2/230329_A00223_1029_AHTGGKDRX2/Nieder
 
 test_class = Artifact_detect(dir)
 
-df_boarder = test_class.get_border()
+df_border = test_class.get_brder()
 df_edge = test_class.get_edge()
-df_concat = pd.concat([df_edge,df_boarder])
+df_concat = pd.concat([df_edge,df_border])
 df_inner = test_class.get_inner(df_concat)
 
 ### STEP 2: Using ttest for comparing between reads on inner spots and target class of spots (edge, boarder, edge and boarder combined) 
 
-test1 = scipy.stats.ttest_ind(df_boarder.gene_count, df_inner.gene_count,equal_var = False)
+test1 = scipy.stats.ttest_ind(df_border.gene_count, df_inner.gene_count,equal_var = False)
 if len(df_boarder ) == 0:
     test1 = "Noboarder"
 

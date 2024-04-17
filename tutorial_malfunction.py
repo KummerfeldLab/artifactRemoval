@@ -1,4 +1,4 @@
-from mulfunction import Mulfunction
+from malfunction import Malfunction
 import pandas as pd
 from pandas import Series
 import numpy as np
@@ -20,13 +20,13 @@ dir_C = "Your directory"
 dir_D = "Your directory"
 
 
-T_A = Mulfunction(dir = dir_A)
+T_A = Malfunction(dir = dir_A)
 df_sum_A = T_A.get_sum()
-T_B = Mulfunction(dir = dir_B)
+T_B = Malfunction(dir = dir_B)
 df_sum_B = T_B.get_sum()
-T_C = Mulfunction(dir = dir_C)
+T_C = Malfunction(dir = dir_C)
 df_sum_C = T_C.get_sum()
-T_D = Mulfunction(dir = dir_D)
+T_D = Malfunction(dir = dir_D)
 df_sum_D = T_D.get_sum()
 
  
@@ -34,10 +34,10 @@ df_sum_D = T_D.get_sum()
 ### STEP 2: outlier detection
 #
 ###
-outlier_A = Mulfunction.outlier(df_sum_A)
-outlier_B = Mulfunction.outlier(df_sum_B)
-outlier_C = Mulfunction.outlier(df_sum_C)
-outlier_D = Mulfunction.outlier(df_sum_D)
+outlier_A = Malfunction.outlier(df_sum_A)
+outlier_B = Malfunction.outlier(df_sum_B)
+outlier_C = Malfunction.outlier(df_sum_C)
+outlier_D = Malfunction.outlier(df_sum_D)
 
 
 ### STEP 3: generate list of shared outlier spots

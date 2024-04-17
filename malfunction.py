@@ -6,7 +6,7 @@ import os
 import gzip
 
 
-class Mulfunction: 
+class Malfunction: 
     def __init__(self, dir):
         self.dir = dir
         self.tissue_matrix = self.read_matrix()
