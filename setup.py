@@ -17,7 +17,7 @@ setup(
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',  # Change as necessary
-        'License :: OSI Approved :: MIT License',  # Choose the appropriate license
+        #'License :: OSI Approved :: MIT License',  # Choose the appropriate license
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
