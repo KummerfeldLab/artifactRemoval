@@ -13,7 +13,7 @@ setup(
     install_requires=[
         'numpy', 
         'pandas', 
-        'copy'
+        'copy',
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',  # Change as necessary
