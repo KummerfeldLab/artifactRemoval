@@ -3,8 +3,17 @@
 
 ## This is a python package for the purpose of tissue artifacts detection (Edge, Border, abnormal spots).
 
+
+
+
 ## Current version 
 
+## Installation 
+
+### Python
+'''
+pip install git+https://github.com/KummerfeldLab/artifactRemoval
+'''
 ### Usage 
 Two main classes are contained in files: artifacts_detection.py and malfunction.py. 
 
