@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='artifacts_remove',  # Replace 'mypackage' with the name of your package
-    version='0.1.0',  # Replace '0.1.0' with the current version of your package
+    version='0.1',  # Replace '0.1.0' with the current version of your package
     author='Yinzhao Wang',  # Replace 'Your Name' with your name
     author_email='wyz2016828@example.com',  # Replace with your email
     description='A package for detect and removal of artifacts in Spatial Transcriptomics Tissue samples',  # A short description
