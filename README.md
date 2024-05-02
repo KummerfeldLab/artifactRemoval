@@ -11,9 +11,9 @@
 ## Installation 
 
 ### Python
-'''
+```
 pip install git+https://github.com/KummerfeldLab/artifactRemoval
-'''
+```
 ### Usage 
 Two main classes are contained in files: artifacts_detection.py and malfunction.py. 
 
