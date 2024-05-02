@@ -10,19 +10,9 @@ setup(
     long_description_content_type='text/markdown',  # This is important for formatting the long description
     url='https://github.com/KummerfeldLab/artifactDetection',  # Link to your package's GitHub repo
     packages=find_packages(),  # Finds all python modules in the directory automatically
-    install_requires=[
-        'numpy', 
-        'pandas', 
-        'copy',
-    ],
-    classifiers=[
-        'Development Status :: 3 - Alpha',  # Change as necessary
-        #'License :: OSI Approved :: MIT License',  # Choose the appropriate license
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-        'Programming Language :: Python :: 3.10',
-    ],
+    install_requires=['numpy', 
+                      'pandas',
+                      ],
     keywords='artifacts removal',  # Keywords for your project
     python_requires='>=3.6'  # Minimum version requirement of the Python runtime
 )
