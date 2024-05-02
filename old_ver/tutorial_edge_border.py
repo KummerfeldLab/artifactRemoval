@@ -17,7 +17,7 @@ dir = "/data_delivery/lniedern/umgc/2023-q2/230329_A00223_1029_AHTGGKDRX2/Nieder
 
 test_class = Artifact_detect(dir)
 
-df_border = test_class.get_brder()
+df_border = test_class.get_border()
 df_edge = test_class.get_edge()
 df_concat = pd.concat([df_edge,df_border])
 df_inner = test_class.get_inner(df_concat)
@@ -32,3 +32,8 @@ test2 = scipy.stats.ttest_ind(df_edge.gene_count, df_inner.gene_count,equal_var 
 
 print(test1.pvalue)
 print(test2.pvalue)
+
+
+
+dir = "/Users/wan00232/Documents/UMNTMC-spatial/Batch5/V12F28_066_A1/spatial/tissue_positions.csv"
+df = pd.read_csv(dir)
