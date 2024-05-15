@@ -335,17 +335,17 @@ class Artifact_detect(Tissue_obj):
         y_mtx = []
         barcode =[]
         for index, row in self.tissue_position.iterrows():
-            if row[1] == 0:
+            if row.iloc[1] == 0:
                 continue
             # the following conditioning controls the deepth of testing
-            if not ((row[2] == 0) | (row[2]==77) | (row[3] == 126) | (row[3] == 127) |(row[3] == 1) | (row[3]==0) ):
+            if not ((row.iloc[2] == 0) | (row.iloc[2]==77) | (row.iloc[3] == 126) | (row.iloc[3] == 127) |(row.iloc[3] == 1) | (row.iloc[3]==0) ):
                 continue    
-            bar = self.dict_coor_to_barcode.get(str(row[2]) + ' ' + str(row[3]) + ' ')
+            bar = self.dict_coor_to_barcode.get(str(row.iloc[2]) + ' ' + str(row.iloc[3]) + ' ')
             i = self.dict_barcode_to_column.get(bar)
             if i == None:
                 continue
-            x_mtx.append(row[2])
-            y_mtx.append(row[3])
+            x_mtx.append(row.iloc[2])
+            y_mtx.append(row.iloc[3])
             barcode.append(bar)
             gene_count.append(self.tissue_matrix[:,i].sum())
         d = {"barcode":barcode,
