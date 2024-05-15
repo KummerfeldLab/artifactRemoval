@@ -10,6 +10,7 @@ import gzip
 from statistics import mean, stdev
 import copy
 
+from artifactsRemoval import Artifact_remove
 #import artifactsRemoval.Artifact_remove
 from artifactsRemoval import Tissue_obj
 from artifactsRemoval import Artifact_remove
