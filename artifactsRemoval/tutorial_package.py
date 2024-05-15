@@ -11,6 +11,8 @@ from statistics import mean, stdev
 import copy
 
 #import artifactsRemoval.Artifact_remove
+from artifactsRemoval import Artifact
+from Artifact import Artifact_remove
 from artifactsRemoval import Tissue_obj
 from artifactsRemoval import Artifact_remove
 dir = "/Users/wan00232/Documents/UMNTMC-spatial/Apr_2_2024/data/055_D1"
