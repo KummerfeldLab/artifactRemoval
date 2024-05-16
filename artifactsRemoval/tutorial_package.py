@@ -10,13 +10,19 @@ import gzip
 from statistics import mean, stdev
 import copy
 
+import pickle
+import sys
+
 from artifactsRemoval import Artifact_remove
 #import artifactsRemoval.Artifact_remove
 from artifactsRemoval import Tissue_obj
 from artifactsRemoval import Artifact_remove
-dir = "/Users/wan00232/Documents/UMNTMC-spatial/Apr_2_2024/data/055_D1"
-test = Artifact_remove.Artifact_remove(dir = dir)
-test = Tissue_obj.Tissue_obj(dir = dir)
+dir = "/Users/wan00232/Documents/UMNTMC-spatial/packages/detect_pkg"
+test = Artifact_remove(dir = dir)
+
+with open('data/sample.pkl', 'wb') as file:
+    pickle.dump(test, file)
+
 
 test.remove_border()
 test.remove_edge(distance=3)
